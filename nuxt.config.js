@@ -1,9 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  mode: 'universal',
   server: {
-    port: 8000,
-    host: '185.69.153.152'
+    port: 8000
+    // host: '185.69.153.152'
   },
   head: {
     title: 'test-app',
@@ -43,7 +42,16 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['nuxt-fontawesome', {
+      component: 'fa',
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['faCalendarAlt']
+        }
+      ]
+    }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

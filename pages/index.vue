@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto flex justify-center">
-    <div class="px-8 py-6 w-full sm:max-w-2xl">
+    <div class="px-8 py-6 w-full sm:max-w-3xl">
       <h1 class="font-medium text-3xl">
         Shiphol NL Parking
       </h1>

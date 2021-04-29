@@ -9,6 +9,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/parkinglist', (req, res, next) => {
+  console.log('req', req)
   request(
     { url: `https://parkos.nl/ajax/locationSearchJSON/?location=parkeren-schiphol&arrival=${req.query.from}&arrivalTime=12%3A00&departure=${req.query.to}&departureTime=12%3A00&sort_f=price&sort_w=asc` },
     (error, response, body) => {
