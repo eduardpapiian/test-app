@@ -37,7 +37,7 @@
         </client-only>
       </div>
       <div class="search-block flex">
-        <button :disabled="!from || !to" class="w-full text-sm h-8 inline-block btn btn-blue sm:self-end disabled:opacity-50" @click="search(from, to)">
+        <button :disabled="!from || !to" class="text-white w-full text-sm h-8 inline-block btn btn-blue-400 sm:self-end disabled:opacity-50" @click="search(from, to)">
           Search Parkings
         </button>
       </div>
@@ -90,6 +90,7 @@ export default {
 
 <style>
 .btn {
+  background-color: #1191f4;
   @apply font-bold px-4 rounded;
 }
 .btn-blue {
