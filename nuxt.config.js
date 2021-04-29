@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  mode: 'universal',
   server: {
     port: 8000,
     host: '185.69.153.152'
